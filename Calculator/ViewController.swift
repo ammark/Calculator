@@ -10,16 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    // _ means that there is no external name. We call this method as touchDigit(foo)
+    @IBAction func touchDigit(_ sender: UIButton) {
+        
+        let digit = sender.currentTitle!
+        
+        print("\(digit) was touched")
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
